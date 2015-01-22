@@ -1,0 +1,11 @@
+--- gtest.cc~	2013-09-19 01:48:31.000000000 +0800
++++ gtest.cc	2015-01-22 17:32:43.463599200 +0800
+@@ -3361,6 +3361,8 @@
+   const std::string kTestsuites = "testsuites";
+ 
+   *stream << "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
++  *stream << "<?xml-stylesheet type=\"text/xsl\" href=\"gtest-result.xsl\" ?>\n";
++  *stream << "<!DOCTYPE testsuites SYSTEM \"gtest-result.dtd\">\n";
+   *stream << "<" << kTestsuites;
+ 
+   OutputXmlAttribute(stream, kTestsuites, "tests",
