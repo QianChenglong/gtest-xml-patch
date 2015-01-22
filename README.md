@@ -1,6 +1,6 @@
 # gtest-xml-patch
 
-Let xml output of gtest much more beautiful!
+Let xml display of gtest outputs much more beautiful!
 
 Like this
 
